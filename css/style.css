@@ -16,7 +16,6 @@ body{
     /* test */
     background-color: sandybrown;
 }
-
 .col{
     float: left;
 }
@@ -25,7 +24,15 @@ body{
     content: "";
     display: table;
 }
-
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container-flex{
+    display: flex;
+}
 /* END COMMONS */
 
 /* MAIN */
@@ -42,10 +49,29 @@ main{
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
+/* logo */
+.logo-big{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+/* button first part main*/
+.button > a{
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 6px 50px;
+    font-size: 15px;
+    color: white;
+}
+
+    
+}
 /* colonne */
 .col-aside{
     width: 250px;
-    height: calc(100%);
+    height: calc(100% );
     background-color: black;
 }
 .col-player{
@@ -53,6 +79,7 @@ main{
     height: calc(100%);
     background-color: #131923;
 }
+
 
 /* END MAIN */
 
