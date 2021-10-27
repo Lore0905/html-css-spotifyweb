@@ -195,10 +195,11 @@ main{
 .music-item{
     justify-content: flex-start;
 }
-/* colore titoli h2 e h3 dentro menù */
+/* colore e h3 dentro menù */
 .music-item h3{
     color:white;
-    
+    padding: 10px 0;
+    font-size: 15px;
 }
 /* single miusic item */
 .single-item-music{
@@ -206,11 +207,14 @@ main{
     height: 100%;
     align-items: center;
     flex-direction: column;
-    margin-left: 15px;
+    margin-right: 15px;
 }
 .description-title{
     padding-bottom: 25px;
-    font-size: 15px;
+    font-size: 12px;
+}
+.singers{
+    font-size: 12px;
 }
 /* artist items */
 .artist-items img{
@@ -228,6 +232,73 @@ footer{
     height: 80px;
     background-color: #282828;
 }
+.container-footer{
+    width: 98%;
+    height: 100%;
+    margin: auto;
 
+    /* test */
+    background-color: cornflowerblue;
+}
 
+.col-footer{
+    width: 17%;
+    height: 100%;
+    align-items: center;
+    /* test */
+    background-color:pink ;
+    border: 1px solid black;
+}
+/* col left */
+#heart-footer{
+    padding-right: 10px;
+}
+.music-playback {
+    width: 20%;
+}
+.song-being-played{
+    align-items: center;
+}
+/* col middle */
+.col-footer-middle{
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+.col-footer-middle li{
+    margin: 0 5px;
+    font-size: 25px;
+}
+#button-play{
+    font-size: 30px;
+    align-content: center;
+}
+.hr-footer{
+    width: 400px;
+    height: 5px;
+    background-color:#5a5a5a;
+    margin: 0 20px;
+    border-radius: 150px;
+    overflow:hidden;
+}
+.hr-time{
+    background-color:#c0c0c0;
+    height: 100%;
+    width: 10%;
+    overflow:hidden;
+}
+.music-time{
+    align-items: center;
+}
+
+/* col right */
+
+.hr-footer.vol{
+    width: 250px;
+}
+.col-footer-right{
+
+    align-items: center;
+
+}
 /* END FOOTER */
