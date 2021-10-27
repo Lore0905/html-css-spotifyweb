@@ -15,8 +15,6 @@ body{
     width: 100%;
     height: 100vh;
 
-    /* test */
-    background-color: sandybrown;
 }
 .col{
     float: left;
@@ -236,18 +234,13 @@ footer{
     width: 98%;
     height: 100%;
     margin: auto;
-
-    /* test */
-    background-color: cornflowerblue;
 }
 
 .col-footer{
     width: 17%;
     height: 100%;
     align-items: center;
-    /* test */
-    background-color:pink ;
-    border: 1px solid black;
+
 }
 /* col left */
 #heart-footer{
@@ -290,14 +283,16 @@ footer{
 .music-time{
     align-items: center;
 }
-
+.time{
+    font-size: 10px;
+}
 /* col right */
 
 .hr-footer.vol{
-    width: 250px;
+    width: 80px;
 }
 .col-footer-right{
-
+    justify-content: flex-end;
     align-items: center;
 
 }
