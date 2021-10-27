@@ -240,7 +240,6 @@ footer{
     width: 17%;
     height: 100%;
     align-items: center;
-
 }
 /* col left */
 #heart-footer{
@@ -252,15 +251,25 @@ footer{
 .song-being-played{
     align-items: center;
 }
+#miusic-name{
+    padding: 0 10px;
+    font-size: 10px;
+}
+.title-music{
+    font-size:15px;
+}
 /* col middle */
 .col-footer-middle{
     flex-grow: 1;
     justify-content: center;
     flex-direction: column;
 }
+.music-buttons{
+    align-items: center;
+}
 .col-footer-middle li{
-    margin: 0 5px;
-    font-size: 25px;
+    margin: 0 10px;
+    font-size: 17px;
 }
 #button-play{
     font-size: 30px;
@@ -277,11 +286,12 @@ footer{
 .hr-time{
     background-color:#c0c0c0;
     height: 100%;
-    width: 10%;
+    width: 25%;
     overflow:hidden;
 }
 .music-time{
     align-items: center;
+    padding: 10px 0;
 }
 .time{
     font-size: 10px;
@@ -289,11 +299,16 @@ footer{
 /* col right */
 
 .hr-footer.vol{
-    width: 80px;
+    width: 120px;
+    margin-right: 0;
 }
 .col-footer-right{
-    justify-content: flex-end;
     align-items: center;
-
+}
+.col-footer{
+    justify-content: flex-end;
+}
+.col-footer-right li{
+    padding-left: 10px;
 }
 /* END FOOTER */
