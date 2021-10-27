@@ -44,12 +44,13 @@ a{
 li{
     list-style-type: none;
 }
-main{
-    
-}
 /* titoli col player */
 .title-col-player{
     padding:30px 0 20px 0;
+}
+/* titoli col player */
+.title-col-player-small{
+    padding:30px 0 10px 0;
 }
 /* END COMMONS */
 
@@ -68,22 +69,16 @@ main{
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 10px;
 }
 /* logo */
-.logo-big{
-    color: white;
-    top: 0;
-    left: 0;
+#logo-big{
+    width: 170px;
     height: 80px;
-    margin-left:10px;
 }
-.logo-big > img{
-    height: 80px;
-    display: block;
-}
+
 /* button first part main*/
 .button > a{
     border: 2px solid white;
@@ -91,6 +86,7 @@ main{
     padding: 10px 40px;
     font-size: 15px;
     color: white;
+    display: inline-block;
 }
 
 
@@ -102,7 +98,6 @@ main{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 7px;
-
     flex-direction: column;
 }
 
@@ -111,12 +106,15 @@ main{
     color:#636363;
     font-size: 12px;
 }
-.col-aside img{
+.navigator img{
     width: 25px;
     vertical-align: middle;
 }
 .navigator li{
     padding-bottom: 10px;
+}
+.navigator{
+    padding-top: 20px;
 }
 
 /* playlist */
@@ -137,7 +135,8 @@ main{
 /* overflow y alla ul */
 .name-playlist{
     overflow-y: auto;
-    height: 100%;
+    height: 70%;
+    padding-top:10px
 }
 #title-playlist{
     padding-top: 12px;
@@ -145,9 +144,12 @@ main{
 
 /* final part aside */
 
-
+.final-part-aside{
+    flex-direction: column;
+}
 .account{
     align-items: center;
+    flex-direction: row;
 }
 .hr{
     width: 100%;
@@ -162,6 +164,10 @@ main{
     background-color:#636363;
     overflow: hidden;
     text-align: center;
+    margin-right: 5px;
+}
+.dowload > img{
+    width: 15px;
     margin-right: 5px;
 }
 
@@ -179,28 +185,38 @@ main{
     color: #636363;
     margin-right: 20px;
     font-size: 15px;
-    display: inline-block;
-}
-.menu li{
-    display: inline-block;
 }
 .menu{
     display: flex;
     justify-content: center;
 }
+
+/* music items */
+.music-item{
+    justify-content: flex-start;
+}
 /* colore titoli h2 e h3 dentro menù */
 .music-item h3{
     color:white;
-    padding: 8px 0 8px 0;
+    
 }
 /* single miusic item */
 .single-item-music{
-    width: calc((100% / 6) - 50px);
+    width: calc((100% / 6) - 15px);
+    height: 100%;
     align-items: center;
     flex-direction: column;
+    margin-left: 15px;
 }
-
-
+.description-title{
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+/* artist items */
+.artist-items img{
+    display: inline-block;
+    border-radius: 50%;
+}
 
 
 
