@@ -9,6 +9,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: #636363;
 }
 .container{
     width: 100%;
@@ -42,6 +43,13 @@ a{
 }
 li{
     list-style-type: none;
+}
+main{
+    align-content: flex-end;
+}
+/* titoli col player */
+.title-col-player{
+    padding:30px 0 20px 0;
 }
 /* END COMMONS */
 
@@ -88,7 +96,10 @@ main{
     padding-top: 88px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 7px;
     overflow: hidden;
+    flex-direction: column;
+
 }
 
 /* navigator */
@@ -105,18 +116,29 @@ main{
 }
 
 /* playlist */
+.new-playlist{
+    flex-direction: column;
+    flex-grow: 1;
+}
 .fa-plus{
     padding: 8px;
     background-color: #636363;
     font-size: 20px;
     margin-top: 10px;
+    color: black;
 }
 .new-playlist li{
     padding-bottom: 15px;
+    overflow-y: auto;
+    width: 80%;
 }
 #title-playlist{
     padding-top: 12px;
 }
+
+/* final part aside */
+
+
 .account{
     align-items: center;
 }
@@ -124,6 +146,7 @@ main{
     width: 100%;
     height: 1px;
     background-color:#636363;
+    margin: 7px 0;
 }
 .profile{
     width: 27px;
@@ -132,6 +155,7 @@ main{
     background-color:#636363;
     overflow: hidden;
     text-align: center;
+    margin-right: 5px;
 }
 
 /* col player */
@@ -142,20 +166,33 @@ main{
     height: calc(100%);
     background-color: #131923;
     padding: 95px 15px 30px 15px;
+    overflow-y: auto;
 }
 .menu a{
     color: #636363;
     margin-right: 20px;
     font-size: 15px;
+    display: inline-block;
+}
+.menu li{
+    display: inline-block;
 }
 .menu{
     display: flex;
     justify-content: center;
 }
-.music-item img{
-    width: 170px;
-    height: 170px;
+/* colore titoli h2 e h3 dentro menù */
+.music-item h3{
+    color:white;
+    padding: 8px 0 8px 0;
 }
+/* single miusic item */
+.single-item-music{
+    width: calc((100% / 6) - 50px);
+    align-items: center;
+    flex-direction: column;
+}
+
 
 
 
