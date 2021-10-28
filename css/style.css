@@ -56,6 +56,9 @@ li{
 .add-playlist:hover{
     color: white;
 }
+.menu a:hover{
+    color: white;
+}
 .add-playlist i:hover{
     background-color: white;
 }
@@ -279,14 +282,20 @@ main{
     justify-content: center;
 }
 /* bordo verde hover nel menù */
-.hr-green-hover:hover{
+.hr-green-hover{
+    background-color: greenyellow;
     height: 3px;
     width: 50px;
-    background-color: greenyellow;
+    display: none;
 }
+.menu li:active .hr-green-hover{
+    display: block;
+}
+
 .menu li{
     flex-direction: column;
     margin-bottom: 15px;
+    align-items: center;
 }
 
 /* music items */
@@ -307,6 +316,7 @@ main{
     align-items: center;
     flex-direction: column;
     margin-right: 15px;
+    text-align: center;
 }
 .description-title{
     padding-bottom: 25px;
