@@ -50,6 +50,16 @@ li{
 .title-col-player-small{
     padding:30px 0 10px 0;
 }
+/* hover */
+.col-aside a:hover,
+.col-aside span:hover,
+.add-playlist:hover{
+    color: white;
+}
+.add-playlist i:hover{
+    background-color: white;
+}
+
 /* END COMMONS */
 
 /* MAIN */
@@ -434,9 +444,6 @@ footer{
 .col-footer-right{
     align-items: center;
     width: 100%;
-    justify-content: flex-end;
-}
-.col-footer{
     justify-content: flex-end;
 }
 .col-footer-right li{
