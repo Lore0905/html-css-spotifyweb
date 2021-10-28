@@ -176,11 +176,6 @@ main{
     margin-right: 5px;
 }
 /* MEDIAQUERI ASIDE*/
-@media screen (max-width: 700px){
-    .col-aside{
-        width:200px;
-    }
-}
 
 
 /* col player */
@@ -195,7 +190,7 @@ main{
 }
 .menu a{
     color: #636363;
-    margin-right: 20px;
+    margin: 0px 10px;
     font-size: 15px;
 }
 .menu{
@@ -204,16 +199,16 @@ main{
 }
 .menu > ul{
     flex-wrap: wrap;
+    justify-content: center;
 }
 /* bordo verde hover nel menù */
-.hr-green-hover{
+.hr-green-hover:hover{
     height: 3px;
     width: 50px;
     background-color: greenyellow;
 }
 .menu li{
     flex-direction: column;
-    align-items: center;
     margin-bottom: 15px;
 }
 
@@ -249,8 +244,8 @@ main{
 }
 /* MEDIAQUERI ASIDE*/
 @media screen (max-width: 700px){
- {
-    flex-wrap:wrap;
+    .single-item-music{
+        width: calc((100% / 4) - 15px);
     }
 }
 
