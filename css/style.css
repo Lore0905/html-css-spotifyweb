@@ -215,6 +215,7 @@ main{
 /* music items */
 .music-item{
     justify-content: flex-start;
+    width: calc((100% / 6) - 15px);
 }
 /* colore e h3 dentro menù */
 .music-item h3{
@@ -224,7 +225,7 @@ main{
 }
 /* single miusic item */
 .single-item-music{
-    width: calc((100% / 6) - 15px);
+
     height: 100%;
     align-items: center;
     flex-direction: column;
@@ -243,9 +244,10 @@ main{
     border-radius: 50%;
 }
 /* MEDIAQUERI ASIDE*/
-@media screen (max-width: 700px){
-    .single-item-music{
-        width: calc((100% / 4) - 15px);
+@media screen and (max-width: 700px){
+    .single-item{ 
+        width: calc(100% / 4);
+        flex-wrap: wrap;
     }
 }
 
@@ -320,6 +322,7 @@ footer{
 .music-time{
     align-items: center;
     padding: 10px 0;
+    width: 50%;
 }
 .time{
     font-size: 10px;
