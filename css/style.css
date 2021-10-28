@@ -109,7 +109,14 @@ main{
     vertical-align: middle;
 }
 .navigator li{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+/* hover border green */
+.navigator li:active{
+    border-left: 3px solid greenyellow;
+    padding-left: 20px;
+    margin-left:-20px;
 }
 .navigator{
     padding-top: 20px;
@@ -168,6 +175,13 @@ main{
     width: 15px;
     margin-right: 5px;
 }
+/* MEDIAQUERI ASIDE*/
+@media screen (max-width: 700px){
+    .col-aside{
+        width:200px;
+    }
+}
+
 
 /* col player */
 
@@ -187,6 +201,20 @@ main{
 .menu{
     display: flex;
     justify-content: center;
+}
+.menu > ul{
+    flex-wrap: wrap;
+}
+/* bordo verde hover nel menù */
+.hr-green-hover{
+    height: 3px;
+    width: 50px;
+    background-color: greenyellow;
+}
+.menu li{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 /* music items */
@@ -219,7 +247,12 @@ main{
     display: inline-block;
     border-radius: 50%;
 }
-
+/* MEDIAQUERI ASIDE*/
+@media screen (max-width: 700px){
+ {
+    flex-wrap:wrap;
+    }
+}
 
 
 /* END MAIN */
