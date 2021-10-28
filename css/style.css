@@ -215,7 +215,7 @@ main{
 /* music items */
 .music-item{
     justify-content: flex-start;
-    width: calc((100% / 6) - 15px);
+    width: 100%;
 }
 /* colore e h3 dentro menù */
 .music-item h3{
@@ -225,8 +225,7 @@ main{
 }
 /* single miusic item */
 .single-item-music{
-
-    height: 100%;
+    width: calc((100% / 6) - 15px);
     align-items: center;
     flex-direction: column;
     margin-right: 15px;
@@ -245,9 +244,8 @@ main{
 }
 /* MEDIAQUERI ASIDE*/
 @media screen and (max-width: 700px){
-    .single-item{ 
-        width: calc(100% / 4);
-        flex-wrap: wrap;
+    .single-item-music{
+        width: calc((100% / 4) - 15px);
     }
 }
 
