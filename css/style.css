@@ -423,9 +423,11 @@ footer{
 /* col left */
 #heart-footer{
     padding-right: 10px;
+    padding-left: 20px;
 }
 .music-playback {
-    width: 20%;
+    max-width: 70px;
+    max-height: 70px;
 }
 .song-being-played{
     align-items: center;
@@ -477,7 +479,6 @@ footer{
     font-size: 10px;
 }
 /* col right */
-
 .vol{
     width: 100%;
     margin-right: 0;
@@ -494,9 +495,20 @@ footer{
 /* media-query footer */
 
 @media screen and (max-width: 700px){
-    /* dimensione immagine della musica in riproduzione nel footer*/
-    .music-playback {
-        width: 25%;
+    .love-items{
+        flex-direction: column;
+    }
+    .fa-folder{
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 536px){
+    #miusic-name{
+        font-size: 9px;
+    }
+    .title-music{
+        font-size: 11px;
     }
 }
 /* END FOOTER */
